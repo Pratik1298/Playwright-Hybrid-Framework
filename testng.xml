@@ -12,4 +12,10 @@
             <class name="com.pratik.tests.CheckoutTest"/>
         </classes>
     </test>
+    <test name="ApiTests">
+        <classes>
+            <class name="com.pratik.tests.api.ProductApiTest"/>
+            <class name="com.pratik.tests.api.UserApiTest"/>
+        </classes>
+    </test>
 </suite>
