@@ -4,6 +4,7 @@ import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
 import com.pratik.api.models.LoginRequest;
 import com.pratik.api.models.LoginResponse;
+import com.pratik.api.models.RegisterRequest;
 import com.pratik.utils.JsonUtil;
 
 public class UserApi extends BaseApi {
@@ -28,5 +29,9 @@ public class UserApi extends BaseApi {
 
     public APIResponse getProfile() {
         return get(BASE_PATH + "/me");
+    }
+
+    public APIResponse register(RegisterRequest user) {
+        return post(BASE_PATH + "/register", user);
     }
 }

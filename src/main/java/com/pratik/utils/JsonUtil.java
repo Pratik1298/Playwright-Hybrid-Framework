@@ -1,9 +1,7 @@
 
 package com.pratik.utils;
 
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 
 public class JsonUtil {
 
@@ -17,5 +15,9 @@ public class JsonUtil {
 
     public static <T> T fromJson(String json, Class<T> type) {
         return GSON.fromJson(json, type);
+    }
+
+    public static JsonObject toJsonObject(String json) {
+        return JsonParser.parseString(json).getAsJsonObject();
     }
 }

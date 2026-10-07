@@ -16,6 +16,7 @@
         <classes>
             <class name="com.pratik.tests.api.ProductApiTest"/>
             <class name="com.pratik.tests.api.UserApiTest"/>
+            <class name="com.pratik.tests.api.BrandApiTest"/>
         </classes>
     </test>
 </suite>
