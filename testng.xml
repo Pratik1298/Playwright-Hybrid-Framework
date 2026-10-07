@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="PlaywrightHybridSuite" verbose="1">
+<suite name="PlaywrightHybridSuite" verbose="1" parallel="methods" thread-count="3">
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
         <listener class-name="com.pratik.listeners.TestListener"/>
     </listeners>
-    <test name="HomePageTests">
+    <test name="RegressionTests">
         <classes>
             <class name="com.pratik.tests.HomePageTest"/>
             <class name="com.pratik.tests.ProductPageTest"/>

@@ -7,7 +7,8 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("[START] " + name(result));
+        System.out.println("[START] " + name(result)
+                + " on " + Thread.currentThread().getName());
     }
 
     @Override
