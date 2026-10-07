@@ -3,6 +3,7 @@
 <suite name="PlaywrightHybridSuite" verbose="1">
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.pratik.listeners.TestListener"/>
     </listeners>
     <test name="HomePageTests">
         <classes>

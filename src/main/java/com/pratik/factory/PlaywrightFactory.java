@@ -29,6 +29,9 @@ public class PlaywrightFactory {
 
         BrowserContext context = browser.newContext(
                 new Browser.NewContextOptions().setViewportSize(1920, 1080));
+        context.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true)
+                .setSnapshots(true));
         Page page = context.newPage();
 
         tlPlaywright.set(playwright);
